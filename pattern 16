@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String [] args)
+	{
+	    Scanner s=new Scanner(System.in);
+	    int l=s.nextInt();
+        int k=0;
+        for(int i=l;i>=1;i--)
+        {
+            for(int j=i;j<=l;j++)
+            {
+                System.out.print(j);
+                k++;
+                if(j<l)
+                System.out.print(" ");
+            }
+            for(int j=k;j<l;j++)
+                {
+                    System.out.print(" "+l);
+                }
+                k=0;
+                System.out.println("");
+        }
+	}
+}
